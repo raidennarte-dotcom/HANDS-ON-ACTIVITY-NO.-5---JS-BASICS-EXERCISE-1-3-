@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Exercise 2</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .input-group {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 110px;
+      }
+      button {
+        margin-right: 5px;
+        margin-top: 5px;
+      }
+      .results {
+        margin-top: 20px;
+      }
+      .output-box {
+        font-weight: bold;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>JS Exercise 2</h2>
+
+    <div class="input-group">
+      <label>First Name:</label>
+      <input type="text" id="firstName" />
+    </div>
+    <div class="input-group">
+      <label>Middle Name:</label>
+      <input type="text" id="middleName" />
+    </div>
+    <div class="input-group">
+      <label>Last Name:</label>
+      <input type="text" id="lastName" />
+    </div>
+
+    <button onclick="generateName()">Generate Fullname</button>
+    <button onclick="clearFields()">Clear Entries</button>
+
+    <div class="results">
+      <div>Full Name:</div>
+      <div id="fullName" class="output-box"></div>
+    </div>
+
+    <!-- External JavaScript Link -->
+    <script src="script.js"></script>
+  </body>
+</html>
